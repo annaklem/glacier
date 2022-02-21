@@ -1,0 +1,13 @@
+/*_____________TOP PAGE_____________*/
+.top-page>div>img{
+    height: 25rem;
+    width: 70%;
+
+    object-fit: cover;
+}
+.top-page>div{
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+}

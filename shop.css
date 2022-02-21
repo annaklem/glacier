@@ -1,0 +1,52 @@
+/*_____________TOP PAGE_____________*/
+.top-page>div>img{
+    height: 25rem;
+    width: 70%;
+
+    object-fit: cover;
+}
+.top-page>div{
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*_____________TOP PAGE_____________*/
+.shop_cards{
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*_____//CARD _ITEM//_____*/
+.card_item{
+    text-align: center;
+    width: 31%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    
+    position: relative;
+}
+.card_item:nth-child(3n){
+    margin-right: 0;
+}
+.card_item>img{
+  width: 100%;
+}
+h5{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.promo{
+    background-color: var(--blue-fonce);
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+}

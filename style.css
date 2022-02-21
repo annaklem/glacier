@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Averia Light;
+    src: url("fonts/AveriaSerifLibre-Light.ttf");
+}
+@font-face {
+    font-family: Cormorant Reg;
+    src: url("fonts/Cormorant-Regular.ttf");
+}
+@font-face {
+    font-family: Josefin;
+    src: url("fonts/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Satisfy Reg;
+    src: url("fonts/Satisfy-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: Cormorant Reg;
+    
+    color: white;
+    /*__________VARIABLE__________*/
+    --blue-clair: #67c1c1;
+    --blue-fonce: #197c79;
+}
+.deco-img{
+    padding: 1.5rem;
+    background: url(images/top-paspartu.jpg)no-repeat top left,
+    url(images/side-paspartu.jpg)  repeat-y right,
+    url(images/side-paspartu.jpg) repeat-y  left top,
+    url(images/top-paspartu.jpg)no-repeat bottom left;
+}
+.deco-bg-blue{
+    /* margin: 1.5rem; */
+
+    background-color: var(--blue-clair);
+    overflow: hidden;
+}
+/*__________COMMUNES__________*/
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+section:not(.top-page),
+main{
+    width:70%;
+    margin: auto;
+}
+p{
+    font-size: 0.9rem;
+}
+h2,h3{
+    font-family: Averia Light;
+}
+
+/*_____________TOP PAGE_____________*/
+/*_____//HEADER//_____*/
+header{
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+
+    font-family: Josefin;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*___//NAV//___*/
+.nav_top>ul{
+    display: flex;
+}
+.nav_top>ul li a{
+    color: white;
+    margin-right: 1rem;
+
+    font-size: 0.9rem;
+}
+.nav_top>ul li:last-child{
+    margin-right: 0;
+}
+.nav_top>ul li i{
+    font-size: 1rem;
+}
+.nav_top>ul li a:hover{
+    border-bottom: 2px solid var(--blue-fonce)
+}
+/*_____//MAIN_TOP//_____*/
+.main_top{
+    width:80%;
+    margin:  2rem  auto;
+
+    display: flex;
+
+    position: relative;
+}
+.main_top>img{
+    width:70%;
+    object-fit: cover;
+}
+/*___//TOP_TEXT//___*/
+.top_text{
+    margin: 5rem 0 0 5rem;
+}
+h1{
+    font-family: Josefin;
+
+    font-size: .9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.top_text h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    
+}
+.btn{
+    font-family: Josefin;
+    background-color: var(--blue-fonce);
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    padding: .8rem 2rem;
+}
+/*___//deco//___*/
+.deco{
+    position: absolute;
+    right: -3rem;
+    top:-3rem;
+}
+.deco>img
+{
+    width:8rem;
+}
+
+/*_____________ABOUT_____________*/
+.about{
+    display: flex;
+    align-content: center;
+    padding: 9rem 0;
+
+}
+.about p{
+    width: 70%;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+/*_____//SHEDULE//_____*/
+.shedule{
+    width: 30%;
+    padding-left: 4rem;
+}
+.shedule h3{
+    font-size: 2rem;
+    padding:0 0 1rem;
+
+}
+/*_____________MAIN_____________*/
+/*_____//CARDS//_____*/
+main{
+    display: flex;
+    justify-content: space-between;
+}
+/*___//CARD//___*/
+.card{
+    padding-right: 3rem;
+}
+.card:last-child{
+    padding-right: 0;
+}
+.card>img{
+    width: 100%;
+}
+.card_description>*{
+    padding:.5rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_description h3{
+    font-size: 1.5rem;
+}
+.card_description p{
+    margin-bottom: 1rem;
+}
+.card_description a{
+    font-family:Josefin ;
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+/*_____________CITATION_____________*/
+.citation{
+    text-align: center;
+    padding: 9rem 0;
+
+    position: relative;
+}
+.citation p{
+    width: 60%;
+    margin: auto;
+
+    font-family:  Satisfy Reg;
+    font-size: 1.2rem;
+}
+.author{
+    font-family: Cormorant Reg;
+    font-size: 1.2rem;
+}
+.citation>*{
+    padding:1rem;
+}
+.deco_cit{
+    position: absolute;
+    top: 30%;
+    left:-30%;
+}
+
+/*_____________ADRESSES_____________*/
+h4{
+    font-family: Josefin;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+h2{
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+h5{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.adresses{
+    display: flex;
+    justify-content: space-between;
+}
+.adresses>img{
+    width: 80%;
+}
+.adr_text p{
+    margin-bottom: 1.2rem;
+}
+/*_____________GALERIE_____________*/
+
+
+.galerie{
+    padding: 8rem 0;
+    text-align: center;
+}
+.galerie_img{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.galerie_img>img{
+    width: 33%;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+.galerie_img:nth-child(3n){
+    padding: ;
+}
+/*_____________CONTACT____________*/
+
+.contact{
+    display: flex;
+    padding: 1rem 0 5rem;
+}
+.contact_text{
+    width: 50%;
+}
+.contact_text p{
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.1rem;
+}
+/*_____//FORM//_____*/
+form{
+    width: 50%;
+}
+form>input:not(.btn),
+textarea{
+width: 100%;
+background: none;
+border: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.413);
+
+}
+form>label{
+    font-size: 1.1rem;
+}
+form>.btn{
+    margin-top: 2rem;
+    border: none;
+}
+
+.rs{
+    display: flex;
+}
+.rs>li a{
+    color: white;
+    margin-right: 1rem;
+}
+/*_____________FOOTER____________*/
+
+footer{
+    background: url("images/footer-image.jpg");
+    background-size: cover;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>img{
+    width: 100px;
+}
+footer>p{
+    font-size:1.1rem;
+}
+footer>*{
+    padding: .5rem;
+}

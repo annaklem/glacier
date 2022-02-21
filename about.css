@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Averia Light;
+    src: url("fonts/AveriaSerifLibre-Light.ttf");
+}
+@font-face {
+    font-family: Cormorant Reg;
+    src: url("fonts/Cormorant-Regular.ttf");
+}
+@font-face {
+    font-family: Josefin;
+    src: url("fonts/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Satisfy Reg;
+    src: url("fonts/Satisfy-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: Cormorant Reg;
+    
+    color: white;
+    /*__________VARIABLE__________*/
+    --blue-clair: #67c1c1;
+    --blue-fonce: #197c79;
+}
+.deco-img{
+    padding: 1.5rem;
+    background: url(images/top-paspartu.jpg)no-repeat top left,
+    url(images/side-paspartu.jpg)  repeat-y right,
+    url(images/side-paspartu.jpg) repeat-y  left top,
+    url(images/top-paspartu.jpg)no-repeat bottom left;
+}
+.deco-bg-blue{
+    /* margin: 1.5rem; */
+
+    background-color: var(--blue-clair);
+}
+/*__________COMMUNES__________*/
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+section:not(.top-page),
+main{
+    width:70%;
+    margin: auto;
+}
+p{
+    font-size: 0.9rem;
+}
+h2,h3{
+    font-family: Averia Light;
+}
+
+/*_____________TOP PAGE_____________*/
+.top-page>div>img{
+    height: 25rem;
+    width: 70%;
+
+    object-fit: cover;
+}
+.top-page>div{
+    margin: 2rem 0 5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*_____________MAIN_____________*/
+main{
+    display: block;
+    text-align: center;
+
+    
+
+}
+.deco_about{
+    position: absolute;
+
+    top:-10%;
+    
+}
+.main_text{
+    padding: 1rem 0;
+    display: flex;
+}
+.main_text>article{
+    text-align: left;
+}
+.main_text>article:first-child{
+    margin-right: 2rem;
+}
+.cards{
+
+    padding: 4rem 0;
+    display: flex;
+}
